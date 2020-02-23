@@ -3,6 +3,20 @@
   	<head>
 		<title>some CSS</title>
 	  	<link rel="stylesheet" type="text/css" href="anExternal.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.container {
+  		position: relative;
+  		text-align: center;
+ 		color: white;
+		}
+		.centered {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+	</style>
   	</head>
   	<body>
     		<h1>Level 1 and 2</h1>
@@ -20,9 +34,9 @@
 		
 		<h1>Level 2</h1>								
    		<h2>Text that is centered on a photo</h2>
-    			
-				<img src="https://iknow-pic.cdn.bcebos.com/c995d143ad4bd11324d117965bafa40f4bfb0571“ alt="" />
-	    				<h3>This is my favorite Japanese Carton:<br />Black Butler</h3>
-  			
+    			<div class="container">
+  				<img src="https://assets.matters.news/embed/1b898ff8-220f-4fcd-bf08-3465653cef0d.jpeg" alt="Snow" style="width:100%;">
+  				<div class="centered">Xiao Zhan</div>
+			</div>
   	</body>
  </html>
